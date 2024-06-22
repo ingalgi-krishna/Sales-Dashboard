@@ -1,0 +1,17 @@
+.month-selector {
+    font-family: 'Arial', sans-serif;
+    font-size: 1rem;
+    padding: 8px 12px;
+    border: 1px solid #fd7e14;
+    border-radius: 4px;
+    background-color: white;
+    color: #fd7e14;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .month-selector:hover {
+    background-color: #fd7e14; 
+    color: white; 
+  }
+  

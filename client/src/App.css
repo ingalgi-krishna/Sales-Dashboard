@@ -1,0 +1,124 @@
+#root {
+  max-width:100%;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+
+.visuals{
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding:20px;
+  margin-bottom: 5%;
+}
+
+.greeting {
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.piechart{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: relative; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:50%;
+}
+
+.barchart{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  height: fit-content;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.month-selector {
+  margin-left: 20px;
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #fd7e14;
+  border-radius: 4px;
+  background-color:  #fd7e14;
+  color:white; 
+  cursor: pointer;
+}
+
+.month-selector:hover {
+  background-color:  white;
+  color: #fd7e14;
+}
+
+.month-select{
+  font-weight: 700;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.app-header {
+  border-radius: 10px;
+  background-color: #8cb7e2;
+  color: #292929;
+  padding: 20px;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+}
+
+@media screen and (max-width: 900px)
+{
+  .visuals
+  {
+
+    height: fit-content;
+    width: 90%;
+    display: flex;
+    flex-direction:column;
+    height: fit-content;
+  }
+
+  .piechart{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+  }
+  
+  .barchart{
+    display: flex;
+    width: 100%;
+    height: fit-content;
+  }
+
+  .statistics{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .month-selector {
+    margin-left: 10px;
+    padding: 8px 12px;
+    font-size: 12px;
+    border: 1px solid #fd7e14;
+    border-radius: 4px;
+    background-color:  #fd7e14;
+    color:white; 
+    cursor: pointer;
+  }
+
+  .month-select{
+    font-weight: 700;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+  }
+
+}

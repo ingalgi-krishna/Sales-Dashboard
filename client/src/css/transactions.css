@@ -1,0 +1,185 @@
+/* transactions.css */
+
+.transactions {
+
+    margin: 20px;
+    padding: 20px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .search-bar {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 10px;
+  }
+  
+  .search-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #fd7e14; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-button:hover {
+    background-color: #e66800; 
+  }
+  
+  .transaction-table {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+  }
+  
+  .transaction-table th,
+  .transaction-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  .transaction-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .transaction-table td {
+    font-size: 0.875rem;
+  }
+
+  .transaction-image {
+    width: auto; /* Set the fixed width for the image */
+    height: 100px; /* Set the fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area while maintaining aspect ratio */
+    border-radius: 5px; /* Optional: Adds rounded corners to the image */
+  }
+  
+  .pagination {
+    margin-top: 20px;
+    text-align: right;
+  }
+  
+  .page-button {
+    padding: 8px 16px;
+    font-size: 1rem;
+    background-color: #fd7e14; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .page-button:hover {
+    background-color: #e66800; 
+  }
+  
+  .page-info {
+    margin: 0 16px;
+    font-size: 0.875rem;
+  }
+  
+
+  @media screen and (max-width: 1000px) {
+    .transaction-table {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: medium;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      overflow-y: auto; /* Enable vertical scroll */
+      display: block; /* Ensure the table behaves like a block element */
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+  
+    .transaction-table th,
+    .transaction-table td {
+      border: 1px solid #ddd;
+      padding: 12px;
+      text-align: left;
+      white-space:nowrap; /* Prevent text wrapping */
+    }
+
+  
+    .transaction-table th {
+      background-color: #f2f2f2;
+    }
+  
+    .transaction-table td {
+      font-size: 0.8rem;
+    }
+  
+    .pagination {
+      margin-top: 20px;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .transaction-table {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: medium;
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+      overflow-y: auto; /* Enable vertical scroll */
+      display: block; /* Ensure the table behaves like a block element */
+      white-space: nowrap; /* Prevent text wrapping */
+    }
+
+    .search-input {
+      width: 70%;
+      flex: 1;
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      margin-right: 10px;
+    }
+    
+    .search-button {
+      width: 30%;
+      padding: 10px 20px;
+      font-size: 0.7rem;
+      background-color: #fd7e14; 
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    .page-button {
+      padding: 4px 16px;
+      font-size: 0.7rem;
+      background-color: #fd7e14; 
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .page-info {
+      margin: 0 8px;
+      font-size: 0.7rem;
+    }
+  }
